@@ -1,0 +1,11 @@
+# Tool Name :- InfinitiServer
+# Author :- Sathish Infiniti
+# Date :- 25/4/2020
+
+if [ -d /data/data/com.termux/files/usr/share/InfinitiServer ];then
+  cd /data/data/com.termux/files/usr/share/InfinitiServer
+  exec python3 InfinitiServer.py $@
+else
+  cd /usr/share/InfinitiServer
+  exec python3 InfinitiServer.py $@
+fi
