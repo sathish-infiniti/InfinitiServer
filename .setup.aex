@@ -1,0 +1,62 @@
+# Tool Name :- InfinitiServer
+# Author :- Sathish Infiniti
+# Date :- 25/4/2020
+
+
+import sys
+import os
+from time import sleep
+from core.system import *
+from modules.logo import *
+
+class setu(object):
+  def rem(self):
+    if os.path.exists(bpath+"infinitiserver") or os.path.exists(spath+"InfinitiServer"):
+      if system=="ubuntu":
+        os.system("sudo rm -rf "+spath+"InfinitiServer && rm -rf "+bpath+"infinitiserver")
+        os.system("cd "+spath+" && sudo rm -rf .path.aex .port.aex .host.aex .serv.lock .h.lock")
+      else:
+        os.system("rm -rf "+spath+"InfinitiServer && rm -rf "+bpath+"infinitiserver")
+        os.system("cd "+spath+" && rm -rf .path.aex .port.aex .host.aex .serv.lock .h.lock")
+
+  def setup(self):
+    self.rem()
+    if system=="ubuntu":
+      Mylogo()
+      print("\n\033[01;33m\007Installing InfinitiServer .....\n")
+      os.system("sudo mkdir "+spath+"InfinitiServer")
+      os.system("sudo mv -v core/infinitiserver "+bpath)
+      os.system("sudo mv -v core modules InfinitiServer.py .InfinitiServer.py LICENSE "+spath+"InfinitiServer")
+      os.system("sudo chmod +x "+bpath+"infinitiserver")
+      os.system("sudo chmod +x "+spath+"InfinitiServer/InfinitiServer.py .InfinitiServer.py")
+      os.system("sudo chmod +x "+spath+"InfinitiServer/modules/* *.* .* .*.*")
+      os.system("sudo chmod +x "+spath+"InfinitiServer/core/* *.* .* .*.*")
+      os.system("cd .. && sudo rm -rf InfinitiServer")
+      sleep(1)
+      Mylogo()
+      print("\n\033[01;33m\007   [\033[01;31m+\033[01;33m] \033[01;32mInstalled InfinitiServer.")
+      print("\033[01;33m   [\033[01;31m+\033[01;33m] \033[01;32mType :- \033[01;33minfinitiserver help \033[01;32mfor more information.\033[00m\n")
+
+    else:
+      Mylogo()
+      print("\n\033[01;33m\007Installing InfinitiServer .....\n")
+      os.system("mkdir "+spath+"InfinitiServer")
+      os.system("mv -v core/infinitiserver "+bpath)
+      os.system("mv -v core modules InfinitiServer.py .InfinitiServer.py LICENSE "+spath+"InfinitiServer")
+      os.system("chmod +x "+bpath+"infinitiserver")
+      os.system("chmod +x "+spath+"InfinitiServer/InfinitiServer.py .InfinitiServer.py")
+      os.system("chmod +x "+spath+"InfinitiServer/modules/* .* .*.* *.*")
+      os.system("chmod +x "+spath+"InfinitiServer/core/* .* .*.* *.*")
+      os.system("cd .. && rm -rf InfinitiServer")
+      sleep(1)
+      Mylogo()
+      print("\n\033[01;33m\007   [\033[01;31m+\033[01;33m] \033[01;32mInstalled InfinitiServer.")
+      print("\033[01;33m   [\033[01;31m+\033[01;33m] \033[01;32mType :- \033[01;33minfinitiserver help \033[01;32mfor more information.\033[00m\n")
+
+
+def InfinitiServer():
+  try:
+    setu().setup()
+  except KeyboardInterrupt:
+    exit()
+InfinitiServer()
