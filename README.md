@@ -4,7 +4,7 @@ InfinitiServer is your own localhost server. you can setup PHP, Apache and MySQL
 <br/><br/><br/>
 
 <p align="center">
-<img src="https://github.com/sathish-infiniti/InfinitiServer/blob/master/Scr/Screenshot_2018-08-03-20-16-17-1.png"/>
+<img src="https://github.com/sathish-infiniti/InfinitiServer/blob/master/Scr/InfinitiServer.jpg"/>
 </p>
 
 <br/><br/><br/>
