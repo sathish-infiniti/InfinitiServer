@@ -60,6 +60,12 @@ InfinitiServer is your own localhost server. you can setup PHP, Apache and MySQL
 
 # How to Install InfinitiServer ?
 
+If Termux Not Installed :
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rI2yBNJfR28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 Open the termux app and type following commands.
 
 * `apt update`
