@@ -88,3 +88,11 @@ Open the termux app and type following commands.
 
 <br/>
 
+Feel Free To Open An Issue...
+
+```
+                 Mail: sathish02infiniti@gmail.com
+       YouTube Channel: https://www.youtube.com/channel/UCjFLAHa6fDRqrhJROgGRTZQ
+```
+
+<a href="https://www.youtube.com/channel/UCjFLAHa6fDRqrhJROgGRTZQ">Check Out My YouTube Channel</a>
